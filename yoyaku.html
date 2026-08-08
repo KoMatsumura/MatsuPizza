@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatsuPizza</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="index.html" class="logo">
+        <img src="img/logo001.png" alt="まつピザのロゴ">
+      </a> 
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="osirase.html">お知らせ</a></li>
+        <li><a href="yoyaku.html">ご予約</a></li>
+        <li><a href="toiawase.html">お問い合わせ</a></li>
+        <li>
+          <button id="dark-mode-button" class="dark-mode-button">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="lower-main">
+    <div class="page-heading">
+      <h2>ご予約</h2>
+      <p>ご来店日時と必要事項をご入力ください。</p>
+    </div>
+    <form class="form-box" action="https://api.staticforms.dev/submit" method="post">
+      <input type="hidden" name="accessKey" value="sf_b2d466307fc4be7ffbe25001">
+      <input type="hidden" name="redirectTo" value="https://www.sus.ac.jp/">
+      <div class="form-item">
+        <label for="visit-date">ご来店日</label>
+        <input type="date" id="visit-date" name="visit_date" required>
+      </div>
+      <div class="form-item">
+        <label for="visit-time">ご来店時間</label>
+        <select id="visit-time" name="visit_time" required>
+          <option value="">選択してください</option>
+          <option value="11:00">11時</option>
+          <option value="12:00">12時</option>
+          <option value="13:00">13時</option>
+          <option value="14:00">14時</option>
+          <option value="15:00">15時</option>
+          <option value="16:00">16時</option>
+          <option value="17:00">17時</option>
+          <option value="18:00">18時</option>
+          <option value="19:00">19時</option>
+          <option value="20:00">20時</option>
+        </select>
+      </div>
+      <div class="form-item">
+        <label for="people">ご来店人数</label>
+        <select id="people" name="people" required>
+          <option value="">選択してください</option>
+          <option value="1名">1名</option>
+          <option value="2名">2名</option>
+          <option value="3名">3名</option>
+          <option value="4名">4名</option>
+          <option value="5名">5名</option>
+          <option value="6名">6名</option>
+          <option value="7名">7名</option>
+          <option value="8名">8名</option>
+        </select>
+        <p id="people-message"></p>
+      </div>
+      <div class="form-item">
+        <label for="name">お名前</label>
+        <input type="text" id="name" name="name" placeholder="例）山田 太郎" required>
+      </div>
+      <div class="form-item">
+        <label for="kana">ふりがな</label>
+        <input type="text" id="kana" name="kana" placeholder="例）やまだ たろう" required>
+      </div>
+      <div class="form-item">
+        <label for="email">メールアドレス</label>
+        <input type="email" id="email" name="email" placeholder="例）example@example.com" required>
+      </div>
+      <div class="form-item">
+        <label for="tel">電話番号</label>
+        <input type="tel" id="tel" name="phone" placeholder="例）090-1234-5678" required>
+      </div>
+      <div class="form-item">
+        <label for="message">ご要望・備考</label>
+        <textarea id="message" name="message" rows="5" placeholder="アレルギーや座席のご希望などがございましたらご入力ください。"></textarea>
+      </div>
+      <div class="form-item">
+        <button type="submit">予約内容を送信する</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <nav>
+        <ul>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="osirase.html">お知らせ</a></li>
+          <li><a href="yoyaku.html">ご予約</a></li>
+          <li><a href="toiawase.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="copyright">&copy; 2026 MATSU PIZZA</p>
+  </footer>
+</body>
+</html>

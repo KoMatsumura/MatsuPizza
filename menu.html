@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MatsuPizza</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>
+      <a href="index.html" class="logo">
+        <img src="img/logo001.png" alt="まつピザのロゴ">
+      </a> 
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="osirase.html">お知らせ</a></li>
+        <li><a href="yoyaku.html">ご予約</a></li>
+        <li><a href="toiawase.html">お問い合わせ</a></li>
+        <li>
+          <button id="dark-mode-button" class="dark-mode-button">🌙</button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="menu-section fade-up">
+    <h1 class="section-title">MENU</h1>
+    <p class="section-subtitle">メニュー</p>
+    <div class="menu-buttons">
+      <button class="active" data-category="pizza">ピザ</button>
+      <button data-category="side">サイド</button>
+      <button data-category="drink">ドリンク</button>
+    </div>
+    <div id="menu-list"></div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <nav>
+        <ul>
+          <li><a href="menu.html">メニュー</a></li>
+          <li><a href="osirase.html">お知らせ</a></li>
+          <li><a href="yoyaku.html">ご予約</a></li>
+          <li><a href="toiawase.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </div> 
+    <p class="copyright">&copy; 2026 MATSU PIZZA</p>
+  </footer>
+</body>
+</html>
